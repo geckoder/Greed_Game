@@ -21,7 +21,7 @@ FONT_SIZE = 15
 COLS = 60
 ROWS = 40
 CAPTION = "Greed"
-DATA_PATH = os.path.dirname(os.path.abspath(__file__)) + "/data/messages.txt"
+# DATA_PATH = os.path.dirname(os.path.abspath(__file__)) + "/data/messages.txt"
 WHITE = Color(255, 255, 255)
 DEFAULT_ARTIFACTS = 40
 
@@ -46,24 +46,24 @@ def main():
 
     robot = Actor()
     robot.set_text("#")
-    robot.set_font_size(FONT_SIZE)
+    robot.set_font_size(FONT_SIZE+5)
     robot.set_color(WHITE)
     robot.set_position(position)
     cast.add_actor("robots", robot)
 
     # create the artifacts
-    with open(DATA_PATH) as file:
-        data = file.read()
-        messages = data.splitlines()
+    # with open(DATA_PATH) as file:
+    #     data = file.read()
+    #     messages = data.splitlines()
 
     for n in range(DEFAULT_ARTIFACTS):
         # chooses between two characters (42 = *, 79 = O)
         text = chr(random.choice([42, 79]))
-        # text = random.choice(["*", "O"]) #Emily I found a simpler way! 
-        message = messages[n]
+        # text = random.choice(["*", "O"]) #Emily I found a simpler way!
+        # message = messages[n]
 
         x = random.randint(1, COLS - 1)
-        y = 0 #artifacts start at the top of the screen
+        y = 0  # artifacts start at the top of the screen
         position = Point(x, y)
         position = position.scale(CELL_SIZE)
 
@@ -77,9 +77,10 @@ def main():
         artifact.set_font_size(FONT_SIZE)
         artifact.set_color(color)
         artifact.set_position(position)
-        artifact.set_message(message)
-        artifact.set_velocity(Point(0, random.randint(2,12))) #set the artifacts to have a random velocity downward
-        cast.add_actor("artifacts", artifact)  
+        artifact.set_message()
+        # set the artifacts to have a random velocity downward
+        artifact.set_velocity(Point(0, random.randint(2, 12)))
+        cast.add_actor("artifacts", artifact)
 
     # start the game
     keyboard_service = KeyboardService(CELL_SIZE)

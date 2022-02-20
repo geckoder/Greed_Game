@@ -23,10 +23,10 @@ class Artifact(Actor):
         """
         return self._message
 
-    def set_message(self, message):
+    def set_message(self):
         """Updates the message to the given one.
 
         Args:
             message (string): The given message.
         """
-        self._message = message
+        self._message = "Score: {score}"  # add score number here
