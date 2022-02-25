@@ -41,7 +41,9 @@ class Point:
         Returns: 
             boolean: True if both x and y are equal; false if otherwise.
         """
-        return self._x == other.get_x() and self._y == other.get_y()
+        tolerance = 6
+        return abs(self._x - other.get_x()) <= tolerance and abs(self._y - other.get_y()) <= tolerance
+        #gave this boolean a tolerance value. If the x and y are within the range of the tolerance, they are considered equal.
 
     def get_x(self):
         """Gets the horizontal distance.
