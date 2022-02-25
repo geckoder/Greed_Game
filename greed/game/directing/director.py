@@ -58,13 +58,16 @@ class Director:
 
         for artifact in artifacts:
             artifact.move_next(max_x, max_y)  # set up artifacts to move
-            # moved message and banner outside if condition so score displays permanently
+            # moved message and banner outside if condition, so score displays permanently
             message = artifact.get_message()
             banner.set_text(message)
+            score = artifact.get_score()
+
             if robot.get_position().equals(artifact.get_position()):
                 # removes artifacts once robot touch them
                 cast.remove_actor("artifacts", artifact)
                 # help! This doesn't always remove artifacts since we made them fall.
+                print(score)
 
     def _do_outputs(self, cast):
         """Draws the actors on the screen.

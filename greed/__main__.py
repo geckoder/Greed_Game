@@ -51,16 +51,10 @@ def main():
     robot.set_position(position)
     cast.add_actor("robots", robot)
 
-    # create the artifacts
-    # with open(DATA_PATH) as file:
-    #     data = file.read()
-    #     messages = data.splitlines()
-
     for n in range(DEFAULT_ARTIFACTS):
         # chooses between two characters (42 = *, 79 = O)
         text = chr(random.choice([42, 79]))
         # text = random.choice(["*", "O"]) #Emily I found a simpler way!
-        # message = messages[n]
 
         x = random.randint(1, COLS - 1)
         y = 0  # artifacts start at the top of the screen
