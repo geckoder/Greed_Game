@@ -7,7 +7,7 @@ Greed is a game in which the player seeks to gather as many falling gems as poss
 
 ---
 
-## Run the program from an IDE like Visual Studio Code. Start your IDE and open the main.py file. Click the "run" button.
+## Run the program from an IDE like Visual Studio Code. Start your IDE and open the greed folder. Then open the __main__.py file. Click the "run" button.
 
 ## Project Structure
 
