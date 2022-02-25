@@ -32,9 +32,9 @@ The project files are organized as follows:
     +-- services
       +-- __pycache__   (cache)
       +-- keyboard_service.py (Detects player input. The responsibility of a KeyboardService is to detect player key presses and translate them into 
-    a point representing a direction.)
+                               a point representing a direction.)
       +-- video_service.py (Outputs the game state. The responsibility of the class of objects is to draw the game state 
-    on the screen.)
+                            on the screen.)
     +-- shared
       +-- __pycache__   (cache)
       +-- color.py      (A color. The responsibility of Color is to hold and provide information about itself. Color has a few convenience methods for comparing them and converting to a tuple.)
