@@ -35,11 +35,14 @@ class KeyboardService:
         if pyray.is_key_down(pyray.KEY_RIGHT):
             dx = 1
         
-        if pyray.is_key_down(pyray.KEY_UP):
-            dy = -1
+        #Removing these lines removes the ability of
+        #the player to move up or down
         
-        if pyray.is_key_down(pyray.KEY_DOWN):
-            dy = 1
+        # if pyray.is_key_down(pyray.KEY_UP):
+        #     dy = -1
+        
+        # if pyray.is_key_down(pyray.KEY_DOWN):
+        #     dy = 1
 
         direction = Point(dx, dy)
         direction = direction.scale(self._cell_size)
