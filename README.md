@@ -29,8 +29,8 @@ The project files are organized as follows:
 
 ---
 
-- Michelle Caceres Assignment- Create README.md file, Debugging
+- Michelle Caceres Assignment- Create README.md file, Debugging Email: michelle.h.dewar@gmail.com
 - Emily Castillo Sandoval Assignment - Display Points
-- Aaron Eardley Assignment - Movement of Gems/Rocks and Player 
+- Aaron Eardley Assignment - Movement of Gems/Rocks and Player Email: AaronEardley@gmail.com
 - MyeongSeon Lee Assignment - Remove artifacts when touched
 - Andrés Perez Assignment - ?
