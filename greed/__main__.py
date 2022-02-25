@@ -41,7 +41,7 @@ def main():
 
     # create the robot
     x = int(MAX_X / 2)
-    y = int(MAX_Y / 2)
+    y = 560 #Changed this to set the position of the actor near the bottom
     position = Point(x, y)
 
     robot = Actor()
