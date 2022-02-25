@@ -1,6 +1,8 @@
 # Greed
 Greed is a game in which the player seeks to gather as many falling gems as possible. The game continues as long as the player wants more! 
 
+![image](https://user-images.githubusercontent.com/84346969/155809759-7dc5edd3-d4e2-4a7f-995b-f9a6495d6041.png)
+
 ## Getting Started
 
 ---
