@@ -17,8 +17,30 @@ The project files are organized as follows:
 
 ```
 
-+-- Greed_game.py      (handles the game)
-+-- README.md           (general info)
++-- greed               (contains all files)
+  +-- data              (stores data for the game)
+    +-- messages.txt    (shows you what you have found)
+  +-- game              (contains files needed to run the game)
+    +-- casting
+      +-- __pycache__   (cache)
+      +-- actor.py      (A visible, moveable thing that participates in the game. The responsibility of Actor is to keep track of its appearance, position and  velocity in 2d space.)
+      +-- artifact.py   (A gem or rock.The responsibility of an Artifact is to provide a message about itself.)
+      +-- cast.py       (A collection of actors. The responsibility of a cast is to keep track of a collection of actors. It has methods for adding, removing and   getting them by a group name.)
+    +-- directing
+      +-- __pycache__   (cache)
+      +-- director.py   (Gets directional input from the keyboard and applies it to the robot.)
+    +-- services
+      +-- __pycache__   (cache)
+      +-- keyboard_service.py (Detects player input. The responsibility of a KeyboardService is to detect player key presses and translate them into 
+    a point representing a direction.)
+      +-- video_service.py (Outputs the game state. The responsibility of the class of objects is to draw the game state 
+    on the screen.)
+    +-- shared
+      +-- __pycache__   (cache)
+      +-- color.py      (A color. The responsibility of Color is to hold and provide information about itself. Color has a few convenience methods for comparing them and converting to a tuple.)
+      +-- point.py      (A distance from a relative origin (0, 0). The responsibility of Point is to hold and provide information about itself. Point has a few convenience methods for adding, scaling, and comparing them.)
+  +-- __main__.py     (the game handler where everything is called)
++-- README.md         (general info)
 ```
 
 ## Required Technologies
